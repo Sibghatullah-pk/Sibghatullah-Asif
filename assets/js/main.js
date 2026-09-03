@@ -16,21 +16,7 @@
 
     const CONFIG = {
         projectsDataUrl: './assets/data/projects.json',
-        formEndpoint: 'https://formspree.io/f/xpwvqzjz',
-        typewriterWords: [
-            'Web Developer',
-            'Flutter Developer',
-            'React Native Dev',
-            'DevOps Engineer',
-            'Security Enthusiast',
-            'AI/ML Explorer',
-            'Network Architect'
-        ],
-        typewriterSpeed: {
-            typing: 100,
-            deleting: 50,
-            pause: 1500
-        }
+        formEndpoint: 'https://formspree.io/f/xpwvqzjz'
     };
 
     // ==========================================================================
@@ -268,45 +254,6 @@
     // Typewriter Effect
     // ==========================================================================
 
-    const Typewriter = {
-        wordIndex: 0,
-        charIndex: 0,
-        isDeleting: false,
-
-        init() {
-            if (DOM.typewriter) {
-                this.type();
-            }
-        },
-
-        type() {
-            const word = CONFIG.typewriterWords[this.wordIndex];
-
-            if (this.isDeleting) {
-                this.charIndex--;
-            } else {
-                this.charIndex++;
-            }
-
-            DOM.typewriter.textContent = word.substring(0, this.charIndex);
-
-            let typeSpeed = this.isDeleting ?
-                CONFIG.typewriterSpeed.deleting :
-                CONFIG.typewriterSpeed.typing;
-
-            if (!this.isDeleting && this.charIndex === word.length) {
-                typeSpeed = CONFIG.typewriterSpeed.pause;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.charIndex === 0) {
-                this.isDeleting = false;
-                this.wordIndex = (this.wordIndex + 1) % CONFIG.typewriterWords.length;
-                typeSpeed = 300;
-            }
-
-            setTimeout(() => this.type(), typeSpeed);
-        }
-    };
-
     // ==========================================================================
     // Projects
     // ==========================================================================
@@ -367,8 +314,8 @@
             ).join('');
 
             const imageHtml = project.image ?
-                `<img src="${project.image}" alt="${project.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'project-card__placeholder\\' style=\\'background: ${project.imagePlaceholder || 'var(--accent-primary)'}\\'>${project.imagePlaceholder ? '🎨' : '📁'}</div>'">` :
-                `<div class="project-card__placeholder" style="background: ${project.imagePlaceholder || 'var(--accent-primary)'}">📁</div>`;
+                `<img src="${project.image}" alt="${project.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'project-card__placeholder\\' style=\\'background: var(--accent-primary)\\'></div>'">` :
+                `<div class="project-card__placeholder" style="background: var(--accent-primary)"></div>`;
 
             return `
         <article class="project-card" data-project-id="${project.id}" tabindex="0" role="button" aria-label="View ${project.title} details">
@@ -752,26 +699,6 @@
     // Floating Animation
     // ==========================================================================
 
-    const FloatingAnimation = {
-        t: 0,
-
-        init() {
-            if (!DOM.floatingTech.length) return;
-            this.animate();
-        },
-
-        animate() {
-            DOM.floatingTech.forEach((icon, i) => {
-                const y = Math.sin((this.t + i * 10) / 15) * 8;
-                const rotate = Math.sin((this.t + i * 10) / 25) * 5;
-                icon.style.transform = `translateY(${y}px) rotate(${rotate}deg)`;
-            });
-
-            this.t++;
-            requestAnimationFrame(() => this.animate());
-        }
-    };
-
     // ==========================================================================
     // Smooth Scroll Utility
     // ==========================================================================
@@ -804,18 +731,16 @@
         ThemeManager.init();
         Navigation.init();
         MobileNav.init();
-        Typewriter.init();
         Projects.init();
         Modal.init();
         ContactForm.init();
         ChatDemo.init();
         SkillBars.init();
-        FloatingAnimation.init();
 
         // Event listeners for theme toggle
         DOM.themeToggle?.addEventListener('click', () => ThemeManager.toggle());
 
-        console.log('🚀 Portfolio initialized successfully!');
+        console.log('Portfolio initialized successfully.');
     }
 
     // Wait for DOM

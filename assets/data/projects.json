@@ -72,8 +72,8 @@
        {
             "id": "enterprise-ecommerce",
             "title": "Enterprise E-Commerce Platform",
-            "shortDesc": "Scalable marketplace with real-time inventory, payments, and AI recommendations. 75% revenue increase.",
-            "fullDesc": "A production-grade e-commerce platform built with React, Node.js, and MongoDB, featuring real-time inventory management, integrated payment processing (Stripe/PayPal), AI-driven product recommendations, and advanced analytics. Scaled to handle 50k+ concurrent users with 99.9% uptime. Increased client sales by 75% within 6 months.",
+            "shortDesc": "Marketplace with inventory, payments, and product recommendation features.",
+            "fullDesc": "An e-commerce platform built with React, Node.js, and MongoDB, featuring inventory management, payment processing, product recommendations, and analytics.",
             "tags": [
                 "web-dev",
                 "fullstack",
@@ -95,7 +95,6 @@
             "year": 2025,
             "role": "Lead Full-Stack Engineer",
             "status": "completed",
-            "businessImpact": "75% sales increase | 50k+ users | 99.9% uptime",
             "contributions": [
                 "Architected scalable microservices architecture",
                 "Implemented real-time inventory synchronization",
@@ -103,18 +102,13 @@
                 "Optimized database queries reducing load times by 60%",
                 "Established CI/CD pipelines for zero-downtime deployments"
             ],
-            "featured": true,
-            "metrics": {
-                "users": "50k+ concurrent",
-                "uptime": "99.9%",
-                "roi": "300% Year 1"
-            }
+            "featured": true
         },
         {
             "id": "fitness-mobile-app",
             "title": "Fitness Tracking Mobile App",
-            "shortDesc": "Cross-platform app with wearable integration and social features. 100k+ downloads, 4.8★.",
-            "fullDesc": "A sophisticated cross-platform mobile application developed in Flutter with Firebase backend, featuring real-time workout tracking, social network integration, wearable device connectivity (Apple Watch, Fitbit), and AI-powered fitness recommendations. Achieved 100k+ downloads in first year with 4.8-star rating. Includes push notifications, in-app analytics, and premium subscription management.",
+            "shortDesc": "Cross-platform app with wearable integration and social features.",
+            "fullDesc": "A cross-platform mobile application developed in Flutter with a Firebase backend, featuring workout tracking, social features, wearable connectivity, recommendations, notifications, and subscription management.",
             "tags": [
                 "mobile",
                 "fullstack",
@@ -135,7 +129,6 @@
             "year": 2025,
             "role": "Lead Mobile Developer",
             "status": "completed",
-            "businessImpact": "100k+ downloads | 4.8★ rating | 25k daily active users",
             "contributions": [
                 "Built cross-platform app serving iOS & Android simultaneously",
                 "Integrated 12+ wearable devices (Apple Watch, Fitbit, Garmin)",
@@ -143,18 +136,13 @@
                 "Implemented social networking with real-time notifications",
                 "Created monetization system with subscriptions"
             ],
-            "featured": true,
-            "metrics": {
-                "downloads": "100k+",
-                "rating": "4.8/5",
-                "activeUsers": "25k daily"
-            }
+            "featured": true
         },
         {
             "id": "corporate-analytics-dashboard",
             "title": "Corporate Analytics Dashboard",
-            "shortDesc": "Interactive BI dashboard with real-time insights. 50% reduction in reporting time.",
-            "fullDesc": "Enterprise-grade business intelligence dashboard built with Next.js and PostgreSQL, providing real-time analytics, customizable reports, and predictive insights. Features drag-and-drop dashboard builder, advanced filtering, data export to multiple formats, and role-based access control. Reduced reporting time by 50% for 200+ enterprise users.",
+            "shortDesc": "Interactive BI dashboard with real-time insights and customizable reports.",
+            "fullDesc": "A business intelligence dashboard built with Next.js and PostgreSQL, providing real-time analytics, customizable reports, predictive insights, advanced filtering, data export, and role-based access control.",
             "tags": [
                 "web-dev",
                 "fullstack",
@@ -176,7 +164,6 @@
             "year": 2025,
             "role": "Senior Full-Stack Engineer",
             "status": "completed",
-            "businessImpact": "50% faster reporting | 200+ users | 1M+ data points daily",
             "contributions": [
                 "Designed real-time data pipeline processing 1M+ events/day",
                 "Built interactive visualization engine with D3.js",
@@ -184,18 +171,13 @@
                 "Developed drag-and-drop dashboard builder UI",
                 "Created role-based access control system"
             ],
-            "featured": true,
-            "metrics": {
-                "users": "200+ enterprise",
-                "dataPoints": "1M+ daily",
-                "reporting": "50% faster"
-            }
+            "featured": true
         },
         {
             "id": "booking-system",
             "title": "Integrated Booking System (SaaS)",
-            "shortDesc": "Full-stack reservation platform. Scales to 10k+ concurrent users.",
-            "fullDesc": "Complete booking and reservation platform with React Native mobile app and Node.js backend, supporting multi-vendor operations, payment processing, calendar management, and automated notifications. Engineered to scale with 10k+ concurrent users. Features include overbooking prevention, dynamic pricing, customer reviews, and analytics. Serves 50+ small businesses.",
+            "shortDesc": "Full-stack reservation platform with payments, calendars, and notifications.",
+            "fullDesc": "A booking and reservation platform with a React Native mobile app and Node.js backend, supporting multi-vendor operations, payment processing, calendar management, automated notifications, overbooking prevention, dynamic pricing, and analytics.",
             "tags": [
                 "mobile",
                 "web-dev",
@@ -217,7 +199,6 @@
             "year": 2025,
             "role": "Full-Stack Architect",
             "status": "completed",
-            "businessImpact": "50+ businesses served | $500k+ GMV | 10k+ concurrent",
             "contributions": [
                 "Architected scalable backend handling 10k+ concurrent bookings",
                 "Implemented real-time availability synchronization",
@@ -225,12 +206,7 @@
                 "Developed comprehensive admin dashboard with KPI metrics",
                 "Created mobile-first responsive design"
             ],
-            "featured": true,
-            "metrics": {
-                "concurrentUsers": "10k+",
-                "businesses": "50+",
-                "monthlyGMV": "$500k+"
-            }
+            "featured": true
         },
          {
             "id": "blog-app",
@@ -272,8 +248,8 @@
         {
             "id": "edtech-platform",
             "title": "EdTech Learning Platform",
-            "shortDesc": "Cloud-based LMS with video streaming. 50k+ students, 99.9% uptime.",
-            "fullDesc": "Comprehensive Learning Management System deployed on Azure, featuring adaptive learning paths, interactive video streaming, assessments, progress tracking, and instructor tools. Built with React frontend, Express backend, and PostgreSQL database. Serves 50k+ active students across 100+ courses with 99.9% uptime.",
+            "shortDesc": "Cloud-based LMS with video streaming, assessments, and progress tracking.",
+            "fullDesc": "A Learning Management System deployed on Azure, featuring adaptive learning paths, interactive video streaming, assessments, progress tracking, and instructor tools. Built with React, Express, and PostgreSQL.",
             "tags": [
                 "web-dev",
                 "fullstack",
@@ -294,7 +270,6 @@
             "year": 2025,
             "role": "Lead Backend Engineer",
             "status": "completed",
-            "businessImpact": "50k+ students | 100+ courses | 99.9% uptime",
             "contributions": [
                 "Designed scalable infrastructure for 50k+ concurrent streaming users",
                 "Implemented adaptive bitrate video streaming",
@@ -302,12 +277,7 @@
                 "Created assessment engine with auto-grading capabilities",
                 "Optimized database achieving <100ms response times"
             ],
-            "featured": true,
-            "metrics": {
-                "students": "50k+",
-                "courses": "100+",
-                "uptime": "99.9%"
-            }
+            "featured": true
         },
           {
             "id": "finance-tracker-flutter",
