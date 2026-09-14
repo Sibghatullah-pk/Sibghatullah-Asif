@@ -1,6 +1,43 @@
 {
     "projects": [
          {
+            "id": "cipher-fyp",
+            "title": "CIPHER",
+            "shortDesc": "AI security research project focused on MCP Tool Poisoning detection in DevSecOps systems.",
+            "fullDesc": "CIPHER is a policy-as-code driven DevSecOps scanner designed to detect Tool Poisoning attacks in AI systems that use Model Context Protocol (MCP). Tool poisoning refers to hidden malicious instructions embedded inside AI tool descriptions that can steal data or trigger unsafe actions. This project combines static analysis with a local LLM (Ollama/Mistral) to detect suspicious behavior in repositories and GitHub URLs. It is built as a FastAPI service, tested with real demo repositories, and integrated with Azure VM for model hosting. The scanner is part of a wider DevSecOps workflow that includes authentication, over-privilege checks, CVE detection, typosquatting analysis, GitHub Actions, and dashboard reporting.",
+            "tags": [
+                "security",
+                "ai-ml",
+                "devops",
+                "full-stack"
+            ],
+            "tech": [
+                "Python",
+                "FastAPI",
+                "Ollama",
+                "Mistral",
+                "Azure VM",
+                "Static Analysis",
+                "GitHub URL Scanning",
+                "DevSecOps"
+            ],
+            "image": null,
+            "imagePlaceholder": "linear-gradient(135deg, #e95420 0%, #77216f 100%)",
+            "demoUrl": null,
+            "repoUrl": null,
+            "year": 2026,
+            "role": "Core Developer / FYP Contributor",
+            "status": "active-development",
+            "contributions": [
+                "Built the core Tool Poisoning detection engine",
+                "Set up Azure VM with Ollama for local LLM-based scanning",
+                "Developed the FastAPI service and scanning workflow",
+                "Added GitHub URL scanning and result structure design",
+                "Integrated detection logic into the broader DevSecOps scanner path"
+            ],
+            "featured": true
+        },
+         {
             "id": "siber-koza-website",
             "title": "Siber Koza Company Website",
             "shortDesc": "Professional corporate website for Siber Koza cybersecurity company.",
