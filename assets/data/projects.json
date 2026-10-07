@@ -22,6 +22,7 @@
                 "DevSecOps"
             ],
             "image": null,
+            "video": "./assets/video/demo2.mp4",
             "imagePlaceholder": "linear-gradient(135deg, #e95420 0%, #77216f 100%)",
             "demoUrl": null,
             "repoUrl": null,

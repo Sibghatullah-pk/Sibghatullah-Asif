@@ -313,7 +313,9 @@
                 `<span class="project-card__tag">${tag}</span>`
             ).join('');
 
-            const imageHtml = project.image ?
+            const imageHtml = project.video ?
+                `<video class="project-card__video" src="${project.video}" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video>` :
+                project.image ?
                 `<img src="${project.image}" alt="${project.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\'project-card__placeholder\\' style=\\'background: var(--accent-primary)\\'></div>'">` :
                 `<div class="project-card__placeholder" style="background: var(--accent-primary)"></div>`;
 
