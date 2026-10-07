@@ -52,6 +52,20 @@ jobs:
       #     find ./assets/images -name '*.png' -exec optipng -o5 {} \;
       #     find ./assets/images -name '*.jpg' -exec jpegoptim --max=85 {} \;
 
+      - name: Remove custom-domain CNAME files
+        run: |
+          find . -maxdepth 1 -type f -iname CNAME -delete
+          if [ -d public/build ]; then
+            find public/build -maxdepth 1 -type f -iname CNAME -delete
+          fi
+          find . -type f -iname CNAME -not -path './.git/*' -exec sh -c '
+            for cname do
+              if grep -qiF "ciphermcp.me" "$cname"; then
+                rm -f "$cname"
+              fi
+            done
+          ' sh {} +
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
